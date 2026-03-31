@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { loadCsvFromPublic } from "./lib/csv.ts";
-import type { CsvRow } from "./lib/csv.ts";
+import { loadCsvFromPublic } from "lib/csv.ts";
+import type { CsvRow } from "lib/csv.ts";
+
 
 import { Header } from "./components/Header.tsx";
 import { Dashboard } from "./components/Dashboard.tsx";
