@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import { loadCsvFromPublic } from "./lib/csv.ts";
-import type { CsvRow } from "./lib/csv.ts";
-import { Header } from "./components/Header";
-import { Dashboard } from "./components/Dashboard";
-import { GeminiPanel } from "./components/GeminiPanel";
+import { loadCsvFromPublic } from "lib/csv.ts";
+import type { CsvRow } from "lib/csv.ts";
+
+import { Header } from "./components/Header.tsx";
+import { Dashboard } from "./components/Dashboard.tsx";
+import { GeminiPanel } from "./components/GeminiPanel.tsx";
 
 export function App() {
   const [rows, setRows] = useState<CsvRow[] | null>(null);
